@@ -22,6 +22,9 @@ const onClickAdd = () => {
     // 完了したTODOに追加
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
+    backButton.addEventListener("click", () => {
+      alert("戻す");
+    });
     div.removeChild(completeButton);
     div.removeChild(deleteButton);
     div.appendChild(backButton);
